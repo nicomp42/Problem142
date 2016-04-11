@@ -1,3 +1,7 @@
+// Bill Nicholson
+// nicholdw@ucmail.uc.edu
+// Project Euler Problem 142
+
 package problem142;
 
 public class Problem142 {
@@ -6,7 +10,7 @@ public class Problem142 {
 		int result = solve();
 		System.out.println("Problem 142 = " + result);
 	}
-	
+	// Pretty much Brute Force. That's a design paradigm. Yes.
 	public static int solve() {
 		int result = 0;
 		int limit = 1006193;
@@ -22,6 +26,7 @@ public class Problem142 {
 								isSquare(y + z)	&&
 								isSquare(y - z)) {
 								System.out.println("x = " + x + " y = " + y + " z = " + z + " x + y + z = " + (x + y + z));
+//								We might want to break out of the loops here. I'm just sayin'
 							}
 						}
 					}
