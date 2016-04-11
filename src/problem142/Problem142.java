@@ -21,7 +21,7 @@ public class Problem142 {
 								isSquare(x - z)	&&
 								isSquare(y + z)	&&
 								isSquare(y - z)) {
-								System.out.println("x = " + x + " y = " + y + " z = " + z + " x + y + z = " + x + y + z);
+								System.out.println("x = " + x + " y = " + y + " z = " + z + " x + y + z = " + (x + y + z));
 							}
 						}
 					}
