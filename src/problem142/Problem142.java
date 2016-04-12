@@ -1,6 +1,7 @@
 // Bill Nicholson
 // nicholdw@ucmail.uc.edu
 // Project Euler Problem 142
+// x = 434657 y = 420968 z = 150568 x + y + z = 1006193
 
 package problem142;
 
@@ -21,6 +22,7 @@ public class Problem142 {
 				if ((x > y) && isSquare(x + y) && isSquare(x - y) ) {	
 					for (z = 1; z < y; z++) {
 						if (y > z) {
+							// Here we have every possible combo of x,y,z
 							if (isSquare(x + z)	&&
 								isSquare(x - z)	&&
 								isSquare(y + z)	&&
